@@ -1,0 +1,87 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:company",
+ "creation": "2025-03-11 15:57:29.965552",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "requires_additional_fields",
+  "default_cost_center",
+  "default_warehouse",
+  "default_sales_person",
+  "default_fel_configuration",
+  "validate_item_stock"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "unique": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "requires_additional_fields",
+   "fieldtype": "Check",
+   "label": "requires_additional_fields"
+  },
+  {
+   "fieldname": "default_cost_center",
+   "fieldtype": "Link",
+   "label": "default_cost_center",
+   "options": "Cost Center"
+  },
+  {
+   "fieldname": "default_warehouse",
+   "fieldtype": "Link",
+   "label": "default_warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "default_sales_person",
+   "fieldtype": "Link",
+   "label": "default_sales_person",
+   "options": "User"
+  },
+  {
+   "default": "0",
+   "fieldname": "default_fel_configuration",
+   "fieldtype": "Check",
+   "label": "default_fel_configuration"
+  },
+  {
+   "default": "0",
+   "fieldname": "validate_item_stock",
+   "fieldtype": "Check",
+   "label": "validate_item_stock"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-11 16:28:19.499413",
+ "modified_by": "Administrator",
+ "module": "Frappe ChatGPT Integration",
+ "name": "Company Configuration",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

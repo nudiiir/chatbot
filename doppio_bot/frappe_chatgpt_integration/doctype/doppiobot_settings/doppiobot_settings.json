@@ -1,0 +1,43 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-06-21 13:00:34.366049",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "google_model_name"
+ ],
+ "fields": [
+  {
+   "default": "models/gemma-3-27b-it",
+   "fieldname": "google_model_name",
+   "fieldtype": "Select",
+   "label": "Google Model Name",
+   "description": "Select the Google Gemma model to use. Ensure your API key has access to the selected model.",
+   "options": "models/gemma-3-27b-it\nmodels/gemma-3-12b-it\nmodels/gemma-3-4b-it\nmodels/gemma-3-1b-it"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-05-12 15:18:09.000000",
+ "modified_by": "Administrator",
+ "module": "Frappe ChatGPT Integration",
+ "name": "DoppioBot Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
