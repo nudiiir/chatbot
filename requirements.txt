@@ -9,23 +9,27 @@ dataclasses-json==0.5.14
 frozenlist==1.5.0
 greenlet==3.1.1
 idna==3.10
-langchain==0.0.135
+# langchain==0.0.135 # Removed, langchain-google-genai will pull compatible langchain-core
 marshmallow==3.26.1
 multidict==6.1.0
 mypy-extensions==1.0.0
 numpy==1.26.4
-openapi-schema-pydantic==1.2.4
+# openapi-schema-pydantic==1.2.4 # Removed, was for old langchain and pydantic v1
 packaging==24.2
 propcache==0.3.0
-pydantic==1.10.21
+# pydantic==1.10.21 # Removed and replaced with Frappe compatible Pydantic v2
 PyYAML==6.0.2
 requests==2.32.3
 SQLAlchemy==1.4.54
-tenacity==8.5.0
-tqdm==4.67.1
-typing-inspect==0.9.0
-typing_extensions==4.12.2
+tenacity>=8.2.2,<8.3.0 # Adjusted for Frappe 15.68.0 compatibility (was 8.5.0)
 urllib3==2.3.0
 yarl==1.18.3
+
+# Added for Gemma integration
 google-generativeai
 langchain-google-genai
+
+# Added/Adjusted for Frappe 15.68.0 compatibility
+pydantic>=2.10.2,<2.11.0 # Frappe requires ~=2.10.2
+google-api-python-client>=2.2.0,<2.3.0 # Frappe requires ~=2.2.0
+google-auth>=1.29.0,<1.30.0 # Frappe requires ~=1.29.0
