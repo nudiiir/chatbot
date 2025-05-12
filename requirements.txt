@@ -30,6 +30,6 @@ google-generativeai
 langchain-google-genai
 
 # Added/Adjusted for Frappe 15.68.0 compatibility
-pydantic>=2.10.2,<2.11.0 # Frappe requires ~=2.10.2
+pydantic==1.10.12
 google-api-python-client>=2.2.0,<2.3.0 # Frappe requires ~=2.2.0
 google-auth>=1.29.0,<1.30.0 # Frappe requires ~=1.29.0
